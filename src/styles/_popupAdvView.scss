@@ -1,0 +1,77 @@
+.popupAdvView {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  border-radius: 2%;
+  padding: 10px 10px 180px 10px;
+  border-width: 2px;
+  border-style: solid;
+  width: 330px;
+  height: 330px;
+  color: white;
+
+  outline: none;
+  @media (min-width: 768px) {
+    width: 430px;
+    height: 380px;
+  }
+
+  .topBar {
+    margin: 10px auto 10px auto;
+
+    .arrow {
+      width: 22px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .heartIcon {
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+      z-index: 1;
+
+      &.favorite {
+        color: black;
+        background: yellow;
+        padding: 1px;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  .typeBar {
+    margin: 10px auto 10px auto;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: lightgrey url("./images/haftone.png") repeat center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.03;
+    background-size: 500px auto;
+  }
+
+  &:after {
+    content: "";
+    background: lightgrey url("./images/pokedex.png") no-repeat 270px 220px;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+}

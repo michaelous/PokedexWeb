@@ -1,0 +1,157 @@
+.aboutTabItem {
+  display: flex;
+  width: 45%;
+  flex-direction: row;
+  margin: 10px auto 10px auto;
+  justify-content: center;
+
+  .dataHeader, .dataStat {
+    text-align: left;
+    width: 90px;
+    font-weight: 400;
+  }
+
+  .dataHeader {
+    color: grey;
+  }
+
+  .dataStat {
+    text-transform: capitalize;
+    color: black;
+    font-weight: 500;
+  }
+}
+
+.baseTabItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 6px 10px 6px 10px;
+  @media(min-width: 576px) {
+    width: 90%;
+  }
+
+  .dataHeader {
+    text-align: left;
+    width: 80px;
+  }
+
+  .dataStat {
+    width: 20px;
+    text-align: center;
+  }
+
+
+  .progressBar {
+    width: 130px;
+    border: 1px solid grey;
+    height: 8px;
+
+    @media (min-width: 768px) {
+      width: 230px;
+    }
+
+    span {
+      &:hover {
+        transition: width 400ms ease-in-out;
+      }
+
+      display: block;
+      height: 100%;
+    }
+  }
+
+  .progressBar.red {
+    span {
+      background: red;
+    }
+  }
+
+  .progressBar.green {
+    span {
+      background: green;
+    }
+  }
+}
+
+.movesTab {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 10px auto 10px auto;
+
+  .move {
+    width: 27%;
+    margin: 7px 3px 7px 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted lightgray;
+    @media (min-width: 768px) {
+      width: 25%;
+      margin: 7px;
+    }
+  }
+}
+
+.tabPanel {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: inherit;
+}
+
+
+.tabsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 101%;
+  padding: 10px;
+  height: 200px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0 20px;
+  background: white;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 25px;
+  bottom: -10px;
+  z-index: 1;
+  color: black;
+
+  .tabHeader {
+    text-transform: capitalize;
+    min-width: unset;
+    color: grey;
+    width: 120px;
+
+    @media (min-width: 768px) {
+      width: 150px;
+    }
+
+    &.Mui-selected {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  .MuiTabs-root {
+    position: absolute;
+    top: 0;
+  }
+
+  button {
+    z-index: 10;
+  }
+
+  .swipeWrapper {
+    margin-top: 40px;
+    width: 100%;
+  }
+}

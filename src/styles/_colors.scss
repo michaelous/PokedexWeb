@@ -1,0 +1,111 @@
+$grass: #48d0b0;
+$fire: #fb6c6c;
+$water: #76bdfe;
+$bug: #99a40a;
+$electric: #f6d821;
+$normal: #e6e4e0;
+$poison: #d5bad7;
+$ground: #d4ca7d;
+$fairy: #ff9e9f;
+$dark: #3b3b3b;
+$dragon: #ee4d34;
+$ice: #d6f5fe;
+$fighting: #e8e8e9;
+$rock: #7a7983;
+$ghost: #ebeae5;
+$steel: #a1bdcd;
+$psychic: #86c654;
+$flying: #87579e;
+$gold: #ffce31;
+$backgroundColor: #fafafa;
+
+.grass {
+  background-color: $grass;
+  border: 2px solid darken($grass, 10%);
+}
+
+.fire {
+  background-color: $fire;
+  border: 2px solid darken($fire, 10%);
+}
+
+.water {
+  background-color: $water;
+  border: 2px solid darken($water, 10%);
+}
+
+.bug {
+  background-color: $bug;
+  border: 2px solid darken($bug, 10%);
+}
+
+.electric {
+  background-color: $electric;
+  border: 2px solid darken($electric, 10%);
+}
+
+.normal {
+  background-color: $normal;
+  border: 2px solid darken($normal, 10%);
+}
+
+.poison {
+  background-color: $poison;
+  border: 2px solid darken($poison, 10%);
+}
+
+.ground {
+  background-color: $ground;
+  border: 2px solid darken($ground, 10%);
+}
+
+.fairy {
+  background-color: $fairy;
+  border: 2px solid darken($fairy, 10%);
+}
+
+.dark {
+  background-color: $dark;
+  border: 2px solid darken($dark, 10%);
+}
+
+.dragon {
+  background-color: $dragon;
+  border: 2px solid darken($dragon, 10%);
+}
+
+.ice {
+  background-color: $ice;
+  border: 2px solid darken($ice, 10%);
+}
+
+.fighting {
+  background-color: $fighting;
+  border: 2px solid darken($fighting, 10%);
+}
+
+.rock {
+  background-color: $rock;
+  border: 2px solid darken($rock, 10%);
+}
+
+.ghost {
+  background-color: $ghost;
+  border: 2px solid darken($ghost, 10%);
+}
+
+.steel {
+  background-color: $steel;
+  border: 2px solid darken($steel, 10%);
+}
+
+
+.psychic {
+  background-color: $psychic;
+  border: 2px solid darken($psychic, 10%);
+}
+
+.flying {
+  background-color: $flying;
+  border: 2px solid darken($flying, 10%);
+}
