@@ -1,398 +1,375 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 
 html, body, #root {
-    height: 100%;
+  height: 100%;
 }
 
 .App {
-    width: 100%;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fafafa;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fafafa;
 }
 
 nav .favoritesIcon {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .grass {
-    background-color: #48d0b0;
-    border: 2px solid #2fb696;
+  background-color: #48d0b0;
+  border: 2px solid #2fb696;
 }
 
 .fire {
-    background-color: #fb6c6c;
-    border: 2px solid #fa3a3a;
+  background-color: #fb6c6c;
+  border: 2px solid #fa3a3a;
 }
 
 .water {
-    background-color: #76bdfe;
-    border: 2px solid #43a5fe;
+  background-color: #76bdfe;
+  border: 2px solid #43a5fe;
 }
 
 .bug {
-    background-color: #99a40a;
-    border: 2px solid #6c7407;
+  background-color: #99a40a;
+  border: 2px solid #6c7407;
 }
 
 .electric {
-    background-color: #f6d821;
-    border: 2px solid #dbbe09;
+  background-color: #f6d821;
+  border: 2px solid #dbbe09;
 }
 
 .normal {
-    background-color: #e6e4e0;
-    border: 2px solid #cfcbc4;
+  background-color: #e6e4e0;
+  border: 2px solid #cfcbc4;
 }
 
 .poison {
-    background-color: #d5bad7;
-    border: 2px solid #c19ac4;
+  background-color: #d5bad7;
+  border: 2px solid #c19ac4;
 }
 
 .ground {
-    background-color: #d4ca7d;
-    border: 2px solid #c7ba57;
+  background-color: #d4ca7d;
+  border: 2px solid #c7ba57;
 }
 
 .fairy {
-    background-color: #ff9e9f;
-    border: 2px solid #ff6b6d;
+  background-color: #ff9e9f;
+  border: 2px solid #ff6b6d;
 }
 
 .dark {
-    background-color: #3b3b3b;
-    border: 2px solid #222222;
+  background-color: #3b3b3b;
+  border: 2px solid #222222;
 }
 
 .dragon {
-    background-color: #ee4d34;
-    border: 2px solid #dd2e12;
+  background-color: #ee4d34;
+  border: 2px solid #dd2e12;
 }
 
 .ice {
-    background-color: #d6f5fe;
-    border: 2px solid #a4e9fd;
+  background-color: #d6f5fe;
+  border: 2px solid #a4e9fd;
 }
 
 .fighting {
-    background-color: #e8e8e9;
-    border: 2px solid #ceced0;
+  background-color: #e8e8e9;
+  border: 2px solid #ceced0;
 }
 
 .rock {
-    background-color: #7a7983;
-    border: 2px solid #616168;
+  background-color: #7a7983;
+  border: 2px solid #616168;
 }
 
 .ghost {
-    background-color: #ebeae5;
-    border: 2px solid #d5d3c8;
+  background-color: #ebeae5;
+  border: 2px solid #d5d3c8;
 }
 
 .steel {
-    background-color: #a1bdcd;
-    border: 2px solid #80a6bb;
+  background-color: #a1bdcd;
+  border: 2px solid #80a6bb;
 }
 
 .psychic {
-    background-color: #86c654;
-    border: 2px solid #6cad3a;
+  background-color: #86c654;
+  border: 2px solid #6cad3a;
 }
 
 .flying {
-    background-color: #87579e;
-    border: 2px solid #6b457d;
+  background-color: #87579e;
+  border: 2px solid #6b457d;
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #555;
+  background: #555;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: black;
+  background: black;
 }
 
 .favPokemons {
-    display: flex;
-    width: 980px;
-    height: 620px;
-    background: white;
-    position: relative;
-    border-radius: 10px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    margin: 10px;
-    padding: 10px;
+  display: flex;
+  width: 980px;
+  height: 620px;
+  background: white;
+  position: relative;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 10px;
+  padding: 10px;
 }
 
 .aboutTabItem {
-    display: flex;
-    width: 45%;
-    flex-direction: row;
-    margin: 10px auto 10px auto;
-    justify-content: center;
+  display: flex;
+  width: 45%;
+  flex-direction: row;
+  margin: 10px auto 10px auto;
+  justify-content: center;
 }
-
 .aboutTabItem .dataHeader, .aboutTabItem .dataStat {
-    text-align: left;
-    width: 90px;
-    font-weight: 400;
+  text-align: left;
+  width: 90px;
+  font-weight: 400;
 }
-
 .aboutTabItem .dataHeader {
-    color: grey;
+  color: grey;
 }
-
 .aboutTabItem .dataStat {
-    text-transform: capitalize;
-    color: black;
-    font-weight: 500;
+  text-transform: capitalize;
+  color: black;
+  font-weight: 500;
 }
 
 .baseTabItem {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin: 6px 10px 6px 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 6px 10px 6px 10px;
 }
 
 @media (min-width: 576px) {
-    .baseTabItem {
-        width: 90%;
-    }
+  .baseTabItem {
+    width: 90%;
+  }
 }
-
 .baseTabItem .dataHeader {
-    text-align: left;
-    width: 80px;
+  text-align: left;
+  width: 80px;
 }
-
 .baseTabItem .dataStat {
-    width: 20px;
-    text-align: center;
+  width: 20px;
+  text-align: center;
 }
-
 .baseTabItem .progressBar {
-    width: 130px;
-    border: 1px solid grey;
-    height: 8px;
+  width: 130px;
+  border: 1px solid grey;
+  height: 8px;
 }
 
 @media (min-width: 768px) {
-    .baseTabItem .progressBar {
-        width: 230px;
-    }
+  .baseTabItem .progressBar {
+    width: 230px;
+  }
 }
-
 .baseTabItem .progressBar span {
-    display: block;
-    height: 100%;
+  display: block;
+  height: 100%;
 }
-
 .baseTabItem .progressBar span:hover {
-    transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
 }
-
 .baseTabItem .progressBar.red span {
-    background: red;
+  background: red;
 }
-
 .baseTabItem .progressBar.green span {
-    background: green;
+  background: green;
 }
 
 .movesTab {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 10px auto 10px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 10px auto 10px auto;
 }
-
 .movesTab .move {
-    width: 27%;
-    margin: 7px 3px 7px 3px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px dotted lightgray;
+  width: 27%;
+  margin: 7px 3px 7px 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted lightgray;
 }
 
 @media (min-width: 768px) {
-    .movesTab .move {
-        width: 25%;
-        margin: 7px;
-    }
+  .movesTab .move {
+    width: 25%;
+    margin: 7px;
+  }
 }
 
 .tabPanel {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    object-fit: inherit;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: inherit;
 }
 
 .tabsWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 101%;
-    padding: 10px;
-    height: 200px;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    margin: 0 20px;
-    background: white;
-    position: absolute;
-    overflow: hidden;
-    border-radius: 25px;
-    bottom: -10px;
-    z-index: 1;
-    color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 101%;
+  padding: 10px;
+  height: 200px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0 20px;
+  background: white;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 25px;
+  bottom: -10px;
+  z-index: 1;
+  color: black;
 }
-
 .tabsWrapper .tabHeader {
-    text-transform: capitalize;
-    min-width: unset;
-    color: grey;
-    width: 120px;
+  text-transform: capitalize;
+  min-width: unset;
+  color: grey;
+  width: 120px;
 }
 
 @media (min-width: 768px) {
-    .tabsWrapper .tabHeader {
-        width: 150px;
-    }
+  .tabsWrapper .tabHeader {
+    width: 150px;
+  }
 }
-
 .tabsWrapper .tabHeader.Mui-selected {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
-
 .tabsWrapper .MuiTabs-root {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
-
 .tabsWrapper button {
-    z-index: 10;
+  z-index: 10;
 }
-
 .tabsWrapper .swipeWrapper {
-    margin-top: 40px;
-    width: 100%;
+  margin-top: 40px;
+  width: 100%;
 }
 
 .popupAdvView {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    z-index: 10;
-    border-radius: 2%;
-    padding: 10px 10px 180px 10px;
-    border-width: 2px;
-    border-style: solid;
-    width: 330px;
-    height: 330px;
-    color: white;
-    outline: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  border-radius: 2%;
+  padding: 10px 10px 180px 10px;
+  border-width: 2px;
+  border-style: solid;
+  width: 330px;
+  height: 330px;
+  color: white;
+  outline: none;
 }
 
 @media (min-width: 768px) {
-    .popupAdvView {
-        width: 430px;
-        height: 380px;
-    }
+  .popupAdvView {
+    width: 430px;
+    height: 380px;
+  }
 }
-
 .popupAdvView .topBar {
-    margin: 10px auto 10px auto;
+  margin: 10px auto 10px auto;
 }
-
 .popupAdvView .topBar .arrow {
-    width: 22px;
-    cursor: pointer;
-    z-index: 1;
+  width: 22px;
+  cursor: pointer;
+  z-index: 1;
 }
-
 .popupAdvView .topBar .heartIcon {
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-    z-index: 1;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1;
 }
-
 .popupAdvView .topBar .heartIcon.favorite {
-    color: black;
-    background: yellow;
-    padding: 1px;
-    border-radius: 100%;
+  color: black;
+  background: #ffcf2d;
+  padding: 1px;
+  border-radius: 100%;
 }
-
 .popupAdvView .typeBar {
-    margin: 10px auto 10px auto;
-    color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 20px;
+  margin: 10px auto 10px auto;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 20px;
 }
-
 .popupAdvView:before {
-    content: "";
-    position: absolute;
-    background: lightgrey url("./images/haftone.png") repeat center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: 0.03;
-    background-size: 500px auto;
+  content: "";
+  position: absolute;
+  background: lightgrey url("./images/haftone.png") repeat center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.03;
+  background-size: 500px auto;
 }
-
 .popupAdvView:after {
-    content: "";
-    background: lightgrey url("./images/pokedex.png") no-repeat 270px 220px;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
+  content: "";
+  background: lightgrey url("./images/pokedex.png") no-repeat 270px 220px;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }
 
 .modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=App.css.map */
