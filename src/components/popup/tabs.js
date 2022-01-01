@@ -23,16 +23,16 @@ export default function FullWidthTabs({data}) {
     };
 
     return (
-        <Box display="flex" width="100%" className={"tabsWrapper"}>
+        <Box className={'tabsWrapper'}>
             <Tabs
-                value={value}
-                onChange={handleChange}
-                indicatorColor="primary">
-                <Tab className="tabHeader" label="About "/>
-                <Tab className="tabHeader" label="Base"/>
-                <Tab className="tabHeader" label="Moves"/>
+              value={value}
+              onChange={handleChange}
+              indicatorColor="primary">
+                <Tab className="tabHeader" label="About " />
+                <Tab className="tabHeader" label="Base" />
+                <Tab className="tabHeader" label="Moves" />
             </Tabs>
-
+    
             <SwipeableViews
                 className="swipeWrapper"
                 index={value}
@@ -81,14 +81,14 @@ export default function FullWidthTabs({data}) {
                         <p className={"dataHeader"}>HP:</p>
                         <p className={"dataStat"}>{getHPStats(data)}</p>
                         <div className={"progressBar red"}>
-                            <span style={{width: `${getHPStats(data)}%`}}/>
+                            <span style={{ width: `${getHPStats(data) > 100 ? 100 : getHPStats(data)}%` }} />
                         </div>
                     </Box>
                     <Box className={"baseTabItem"} justifyContent={"space-around"} flexDirection={"row"}>
                         <p className={"dataHeader"}>Attack:</p>
                         <p className={"dataStat"}>{getAtkStats(data)}</p>
                         <div className={"progressBar green"}>
-                            <span style={{width: `${getAtkStats(data)}%`}}/>
+                            <span style={{ width: `${getAtkStats(data) > 100 ? 100 : getAtkStats(data)}%` }} />
                         </div>
                     </Box>
 
@@ -96,14 +96,14 @@ export default function FullWidthTabs({data}) {
                         <p className={"dataHeader"}>Defence:</p>
                         <p className={"dataStat"}>{getDefStats(data)}</p>
                         <div className={"progressBar red"}>
-                            <span style={{width: `${getDefStats(data)}%`}}/>
+                            <span style={{ width: `${getDefStats(data) > 100 ? 100 : getDefStats(data)}%` }} />
                         </div>
                     </Box>
                     <Box className={"baseTabItem"} justifyContent={"space-around"} flexDirection={"row"}>
                         <p className={"dataHeader"}>Special:</p>
                         <p className={"dataStat"}>{getSpecialStats(data)}</p>
                         <div className={"progressBar green"}>
-                            <span style={{width: `${getSpecialStats(data)}%`}}/>
+                            <span style={{ width: `${getSpecialStats(data) > 100 ? 100 : getSpecialStats(data)}%` }} />
                         </div>
                     </Box>
                 </TabPanel>

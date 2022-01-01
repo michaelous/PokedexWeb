@@ -36,7 +36,8 @@ $pokedexYellow: #ffcf2d;
       z-index: 1;
       &.favorite {
         color: black;
-        background: $pokedexYellow;
+        fill: $pokedexYellow;
+        stroke: $pokedexYellow;
         padding: 1px;
         border-radius: 100%;
       }

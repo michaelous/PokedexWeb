@@ -174,7 +174,6 @@ nav .favoritesIcon {
   align-items: center;
   margin: 6px 10px 6px 10px;
 }
-
 @media (min-width: 576px) {
   .baseTabItem {
     width: 90%;
@@ -193,7 +192,6 @@ nav .favoritesIcon {
   border: 1px solid grey;
   height: 8px;
 }
-
 @media (min-width: 768px) {
   .baseTabItem .progressBar {
     width: 230px;
@@ -230,7 +228,6 @@ nav .favoritesIcon {
   align-items: center;
   border: 1px dotted lightgray;
 }
-
 @media (min-width: 768px) {
   .movesTab .move {
     width: 25%;
@@ -271,7 +268,6 @@ nav .favoritesIcon {
   color: grey;
   width: 120px;
 }
-
 @media (min-width: 768px) {
   .tabsWrapper .tabHeader {
     width: 150px;
@@ -309,7 +305,6 @@ nav .favoritesIcon {
   color: white;
   outline: none;
 }
-
 @media (min-width: 768px) {
   .popupAdvView {
     width: 430px;
@@ -332,7 +327,8 @@ nav .favoritesIcon {
 }
 .popupAdvView .topBar .heartIcon.favorite {
   color: black;
-  background: #ffcf2d;
+  fill: #ffcf2d;
+  stroke: #ffcf2d;
   padding: 1px;
   border-radius: 100%;
 }
